@@ -87,6 +87,55 @@
         </div>
        
     </section>
+    <section class="rooms ">
+            <div class="container mx-auto">
+                <h2>  Available Rooms</h2>
+                <div class="carasoul">
+                <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="card-img  pb-2">
+                   <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-info">
+                <h5>This is house title</h5>
+                        <p>This is description</p>
+                        <p>this is price</p>
+                </div>
+            </div>
+            <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="card-img  pb-2">
+                   <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-info">
+                <h5>This is house title</h5>
+                        <p>This is description</p>
+                        <p>this is price</p>
+                </div>
+            </div>
+            <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="card-img  pb-2">
+                   <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-info">
+                <h5>This is house title</h5>
+                        <p>This is description</p>
+                        <p>this is price</p>
+                </div>
+            </div>
+            <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="card-img  pb-2">
+                   <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-info">
+                <h5>This is house title</h5>
+                        <p>This is description</p>
+                        <p>this is price</p>
+                </div>
+            </div>
+                </div>
+                
+                  
+            </div>
+    </section>
         
     </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
