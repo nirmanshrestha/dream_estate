@@ -28,6 +28,12 @@ nav{
 .justify-center {
     justify-content: center;
 }
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+
+}
 .nav-links li {
     list-style-type: none;
     padding: 5px;

@@ -36,7 +36,24 @@
        </div>
 
     </section>
+    <section class="services ">
+        <div class="container mx-auto ">
+            <h1 class="text-capitalize">What can we help you find<h1>
+               
+             <div class="card flex justify-content-between align-items-start flex-column">
+                    <div class="card-img pb-2">
+                        <img src="./asset/house.png" alt="Home"  width="100%">
+                    </div>
+                    <div class="card-info">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit
+                            </p>
+                        
+                    </div>
+                </div>
+        </div>
 
+    </section>
     <section class="products my-5">
         <div class="container mx-auto">
         <h3 class="py-4">Latest Properties</h3>
