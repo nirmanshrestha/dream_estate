@@ -39,14 +39,38 @@
     <section class="services ">
         <div class="container mx-auto ">
             <h1 class="text-capitalize py-4">What can we help you find<h1>
+                <div class="flex justify-content-evenly">
+
+                
             <div class="card flex flex-column justify-content-start align-items-start">
                 <div class="service-card-img pb-2">
                    <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
                 </div>
-                <div class="card-des">
+                <div class="card-des py-2">
                
-                        <p class="card-text px-3 ">This is description</p>
+                        <p class="card-text px-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quas asperiores et pariatur dolorum cupiditate magni perferendis itaque ullam illum, nulla at illo officia quis omnis, amet id aut!</p>
                        
+                </div>
+                </div>
+                 <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="service-card-img pb-2">
+                   <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-des py-2">
+               
+                <p class="card-text px-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quas asperiores et pariatur dolorum cupiditate magni perferendis itaque ullam illum, nulla at illo officia quis omnis, amet id aut!</p>
+                       
+                </div>
+                </div>
+                 <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="service-card-img pb-2">
+                   <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-des py-2">
+               
+                <p class="card-text px-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quas asperiores et pariatur dolorum cupiditate magni perferendis itaque ullam illum, nulla at illo officia quis omnis, amet id aut!</p>
+                       
+                </div>
                 </div>
                 </div>
         </div>
@@ -141,7 +165,7 @@
                    <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
                 </div>
                 <div class="card-info">
-                <h5>This is house title</h5>
+                    <h5>This is house title</h5>
                         <p>This is description</p>
                         <p>this is price</p>
                 </div>
