@@ -38,18 +38,16 @@
     </section>
     <section class="services ">
         <div class="container mx-auto ">
-            <h1 class="text-capitalize">What can we help you find<h1>
+            <h1 class="text-capitalize py-4">What can we help you find<h1>
+            <div class="card flex flex-column justify-content-start align-items-start">
+                <div class="service-card-img pb-2">
+                   <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
+                </div>
+                <div class="card-des">
                
-             <div class="card flex justify-content-between align-items-start flex-column">
-                    <div class="card-img pb-2">
-                        <img src="./asset/house.png" alt="Home"  width="100%">
-                    </div>
-                    <div class="card-info">
-                        <p>Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit
-                            </p>
-                        
-                    </div>
+                        <p class="card-text px-3 ">This is description</p>
+                       
+                </div>
                 </div>
         </div>
 

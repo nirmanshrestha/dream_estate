@@ -102,4 +102,14 @@ nav {
 .card-img {
   height: 300px;
   padding: 0;
+}
+
+.service-card-img {
+  height: 50%;
+  width: 50%;
+  align-self: center;
+}
+
+.card-text {
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */

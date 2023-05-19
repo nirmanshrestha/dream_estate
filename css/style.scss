@@ -106,12 +106,7 @@ nav{
 
 //products styles
 
-.products {
-    
-   
-    
-    
-}
+
 .carasoul {
     display: grid;
     grid-template-rows: auto;
@@ -139,8 +134,15 @@ nav{
 }
 
 
-
-
+.service-card-img{
+    height: 50%;
+    width: 50%;
+    align-self: center;
+}
+.card-text {
+    font-size: 1rem;
+}
+    
 
 
 
