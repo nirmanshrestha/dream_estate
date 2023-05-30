@@ -19,7 +19,7 @@
             <li><a href="#">Find Agent</a></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">About us</a> </li>
-            <li><a href="#">Login</a></li>
+            <li><a href="./pages/login.php">Login</a></li>
         </ul>
         </div>
         
@@ -39,9 +39,9 @@
     <section class="services ">
         <div class="container mx-auto ">
             <h1 class="text-capitalize py-4">What can we help you find<h1>
-                <div class="flex justify-content-evenly">
+                <div class="flex justify-content-center ">
 
-                
+<!--                 
             <div class="card flex flex-column justify-content-start align-items-start">
                 <div class="service-card-img pb-2">
                    <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
@@ -51,27 +51,25 @@
                         <p class="card-text px-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quas asperiores et pariatur dolorum cupiditate magni perferendis itaque ullam illum, nulla at illo officia quis omnis, amet id aut!</p>
                        
                 </div>
-                </div>
-                 <div class="card flex flex-column justify-content-start align-items-start">
-                <div class="service-card-img pb-2">
-                   <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
-                </div>
-                <div class="card-des py-2">
-               
-                <p class="card-text px-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quas asperiores et pariatur dolorum cupiditate magni perferendis itaque ullam illum, nulla at illo officia quis omnis, amet id aut!</p>
-                       
-                </div>
-                </div>
-                 <div class="card flex flex-column justify-content-start align-items-start">
-                <div class="service-card-img pb-2">
-                   <img src=".\asset\house.png" alt="Image" height="100%" width="100%">
-                </div>
-                <div class="card-des py-2">
-               
-                <p class="card-text px-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, eum quas asperiores et pariatur dolorum cupiditate magni perferendis itaque ullam illum, nulla at illo officia quis omnis, amet id aut!</p>
-                       
-                </div>
-                </div>
+                </div> -->
+                <div class="card" style="width: 18rem;">
+  <img src="./asset/house.png" class="card-img-top service-card-img" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./asset/house.png" class="card-img-top service-card-img" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="./asset/house.png" class="card-img-top service-card-img" alt="...">
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
                 </div>
         </div>
 
