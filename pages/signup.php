@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         input,label{
             width: 80%;
+            padding: 0 5px;
         }
         label{
             text-align: left;
+        }
+        .user-name, .security {
+            width: 80%;
+        }
+        form {
+            max-width: fit-content;
         }
     </style>
     <title>Document</title>
@@ -20,17 +27,16 @@
     <main class="container mx-auto mt-3">
 
 
-        <form action="signup.php" method="POST" class=" container mx-auto">
+        <form action="signup.php" method="POST" class=" mx-auto border">
 
-            <div  class="border d-flex flex-column mx-auto">
-                <div class="user-name d-flex flex-column ">
+            <div  class=" d-flex flex-column  align-items-center" style="width: fit-content;">
+                <div class="user-name ">
                     <label for="first_name">First Name</label>
                     <input type="text" name="first_name">
                     <label for="last_name">Last Name</label>
                     <input type="text" name="last_name">
                 </div>
                 <div class="security">
-
                     <label for="email">Email</label>
                     <input type="text" name="email">
                     <label for="password">Password</label>
