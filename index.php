@@ -8,22 +8,8 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-       
-    <nav >
-        <div class="container  flex justify-content-between mx-auto align-items-center">
-        <div class="logo">
-            LOGO
-        </div>
-        <ul class="nav-links d-flex justify-content-between align-items-center mb-0">
-            <li><a href="#">Home</a> </li>
-            <li><a href="#">Find Agent</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">About us</a> </li>
-            <li><a href="./pages/login.php">Login</a></li>
-        </ul>
-        </div>
-        
-    </nav>
+       <?php include './components/navbar.php' ?>
+   
     <section class="hero-banner d-flex  align-items-center position-relative">
         <section class=" position-absolute banner-overlay"></section>
     <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" height="100%" width="100%" class="hero-image"/>
