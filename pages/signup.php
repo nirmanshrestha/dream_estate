@@ -43,7 +43,7 @@
                     <input type="password" name="password">
                 </div>
             </div>
-              
+            <input type="submit" name="submit" value="Sign up" class="btn btn-primary">
         </form>
         </main>
 </body>

@@ -1,4 +1,8 @@
-
+<?php if(isset($_POST["submit"])) {
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+ 
+} ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,11 +30,7 @@
   <a href=".\signup.php">Dont have a account? </a>
 
   <input type="submit" name="submit" value="login" class="btn btn-primary" />
-  <?php
-   $username = $_POST['email']; 
-   $pass = $_POST['password']; 
-   echo $username,$pass;
-   ?>
+ 
 </form>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>

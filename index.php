@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-       <?php include './components/navbar.php' ?>
-   
+        <header>
+            
+             <?php include './components/navbar.php' ?>
+        </header>
     <section class="hero-banner d-flex  align-items-center position-relative">
         <section class=" position-absolute banner-overlay"></section>
     <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" height="100%" width="100%" class="hero-image"/>
@@ -52,7 +54,7 @@
         <div class="container mx-auto">
         <h3 class="py-4">Latest Properties</h3>
         <div class="carasoul d-grid justify-content-between align-items-center ">
-            <div class="card flex flex-column justify-content-start align-items-start">
+            <div class="card flex flex-column  ">
                 <div class="card-img pb-2">
                    <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
                 </div>
@@ -66,7 +68,7 @@
                 <div class="card-img pb-2">
                    <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
                 </div>
-                <div class="card-info">
+                <div class="card-info ">
                 <h5>This is house title</h5>
                         <p>This is description</p>
                         <p>this is price</p>
@@ -82,7 +84,7 @@
                         <p>this is price</p>
                 </div>
             </div>
-            <div class="card flex flex-column justify-content-start align-items-start">
+            <div class="card flex flex-column ">
                 <div class="card-img  pb-2">
                    <img src=".\asset\wallpaperflare.com_wallpaper(10).jpg" alt="Image" height="100%" width="100%">
                 </div>
