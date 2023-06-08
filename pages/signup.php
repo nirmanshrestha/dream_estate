@@ -1,3 +1,27 @@
+<?php
+require '../connection.php';
+
+if(isset($_POST["registration"])){
+    $name = $_POST['name'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $address = $_POST['address'];
+    $mobile = $_POST['mobile'];
+    $dob = $_POST['dob'];
+
+    $qry = "INSERT INTO customer VALUES ('','$name','$username','$email','$password','$address','$mobile','$dob','active');";
+
+
+
+    if($connect_db->query($qry)){
+        echo '<script> alert("successfull") </script>';
+    }
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,19 +55,23 @@
 
             <div  class=" d-flex flex-column  align-items-center" style="width: fit-content;">
                 <div class="user-name ">
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="first_name">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name">
-                </div>
-                <div class="security">
-                    <label for="email">Email</label>
+                    
+                    <input type="text" name="name">
+                    
+                    <input type="text" name="username">
+                  
                     <input type="text" name="email">
-                    <label for="password">Password</label>
+          
                     <input type="password" name="password">
+                    <input type="text" name="address" >
+                    <input type="text" name="mobile" >
+                    <input type="date" name="dob" >
                 </div>
+
+                    
+           
             </div>
-            <input type="submit" name="submit" value="Sign up" class="btn btn-primary">
+            <input type="submit" name="registration" value="Sign up" class="btn btn-primary">
         </form>
         </main>
 </body>

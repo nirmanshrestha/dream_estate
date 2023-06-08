@@ -1,8 +1,22 @@
+<?php require '../connection.php' ?>
+
 <?php if(isset($_POST["submit"])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
  
-} ?>
+
+  $qry = "select email,password form customer where email= '$email', password='$password';";
+
+  if ($connect_db->query($qry)) {
+    echo "nnn";
+    
+  }
+
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
