@@ -1,4 +1,4 @@
-<?php require '../connection.php' ?>
+<?php require './connection.php' ?>
 
 <?php
 
@@ -18,7 +18,7 @@ $result = $connect_db->query($qry);
    $row = $result->fetch_assoc();
    $hashedPassword = $row['password'];
     if($password ==  $hashedPassword){
-      header('Location: ../index.php');
+      header('Location: ./pages/home.php');
       exit;
     }
     else{
@@ -44,33 +44,91 @@ $result = $connect_db->query($qry);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Estate - Login</title>
+  <style>
+    /* Add your custom CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 100px;
+    }
+    
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .form-group .btn-submit {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4caf50;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    
+    .form-group .btn-submit:hover {
+      background-color: #45a049;
+    }
+    
+    .signup-link {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-<form action="./login.php" method="POST" >
-  <div class="row mb-3">
-    <label for="email" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" name="email" class="form-control" id="email">
+  <div class="container">
+    <h2>Dream Estate - Login</h2>
+    <form method="POST" action="index.php">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Log In" class="btn-submit" name="submit">
+      </div>
+    </form>
+    <div class="signup-link">
+      Don't have an account? <a href="signup.php">Sign up</a>
     </div>
   </div>
-  <div class="row mb-3">
-    <label for="password" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" name="password" class="form-control" id="password">
-    </div>
-  </div>
-  <a href=".\signup.php">Dont have a account? </a>
-
-  <input type="submit" name="submit" value="login" class="btn btn-primary" />
- 
-</form>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 </html>

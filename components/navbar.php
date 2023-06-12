@@ -9,7 +9,7 @@
             <li><a href="#">Find Agent</a></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">About us</a> </li>
-            <li><a href="./pages/login.php">Login</a></li>
+            <li><a href="./pages/login.php">Orders</a></li>
         </ul>
         </div>
         
