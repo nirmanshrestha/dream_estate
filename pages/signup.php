@@ -15,7 +15,7 @@ if(isset($_POST["registration"])){
 
 
     if($connect_db->query($qry)){
-        echo '<script> alert("successfull") </script>';
+        echo '<script>~ alert("successfull") </script>';
     }
     
 }

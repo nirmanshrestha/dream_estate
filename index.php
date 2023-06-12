@@ -1,6 +1,6 @@
-<?php require './connection.php' ?>
+<?php require './connection.php' ;
 
-<?php
+
 
   
 
@@ -10,21 +10,28 @@ if(isset($_POST["submit"])) {
   $email = mysqli_real_escape_string($connect_db, $_POST['email']);
   $password =  $_POST['password'];
 
-  $qry = "select email, password from customer where email= '$email' ;";
+  $qry = "select id, email, username, type, password from customer where email= '$email' ;";
 $result = $connect_db->query($qry);
 
   if($result->num_rows == 1){
-
+    echo 'true';
    $row = $result->fetch_assoc();
+    
    $hashedPassword = $row['password'];
     if($password ==  $hashedPassword){
-      header('Location: ./pages/home.php');
+      echo 'nns';
+      session_start();
+
+      $_SESSION['u_id'] = $row['id'];
+      $_SESSION['username'] = $row['username'];
+      $_SESSION['type'] = $row['type'];
+      
+      header('location: ./pages/home.php');
       exit;
+     
     }
     else{
-      echo $_POST['password'];
-      
-      echo $row['password'];
+      echo "incorrect password";
     }
   }
   else{

@@ -1,3 +1,13 @@
+<?php
+session_start();
+echo  "<p style='color: white;'> This is session id:  </p>" .session_id();
+echo $_SESSION["username"];
+
+
+?>
+
+
+
 <!DOCTYPE html >
 <html>
     <head>
