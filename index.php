@@ -1,9 +1,10 @@
 <?php require './connection.php' ;
 
 
-
-  
-
+if(session_start()){
+  header('location: ./pages/home.php');
+  exit;
+}
 if(isset($_POST["submit"])) {
   
  
